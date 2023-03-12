@@ -1,0 +1,9 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus,health,metric
+
+keystore:
+  relative-cacerts-path: ${KEYSTORE_PATH:\\lib\\security\\cacerts}
+  password: ${KEYSTORE_PASSWORD:changeit}
